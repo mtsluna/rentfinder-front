@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  rentfinder-front:
+    image: rentfinder-front
+    build: .
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+    ports:
+      - "80:80"
+  rentfinder-backend:
+    image: docker.io/mtsluna/rentfinder-api
+    restart: unless-stopped
+    pull_policy: always
+    ports:
+      - "3000:3000"
