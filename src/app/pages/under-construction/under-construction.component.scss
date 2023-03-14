@@ -1,0 +1,18 @@
+@import "src/app/styles/flex";
+
+.under-construction {
+  @include flex-center;
+  flex-direction: column;
+  height: 100vh;
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__text {
+    @include flex-center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+}
