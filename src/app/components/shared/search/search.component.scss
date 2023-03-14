@@ -1,0 +1,44 @@
+@import "src/app/styles/padding";
+@import "src/app/styles/heigth";
+@import "src/app/styles/width";
+@import "src/app/styles/flex";
+@import "src/app/styles/shadow";
+
+.search {
+  @include flex-space-between-row-center;
+  @include height-3_5;
+  border-radius: 25px;
+  overflow: hidden;
+  @include standard-shadow;
+
+  &__location {
+    @include flex-center;
+    padding-left: 0.75rem;
+    color: gray;
+  }
+
+  &__input {
+    @include width-100;
+    @include height-100;
+    box-sizing: border-box;
+    border: none;
+    font-size: medium;
+    outline: none;
+  }
+
+  &__search {
+    @include height-100;
+    @include flex-center;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  &__settings {
+    @include height-100;
+    @include flex-center;
+    color: white;
+    background-color: black;
+    padding-right: 1rem;
+    padding-left: 0.75rem;
+  }
+}

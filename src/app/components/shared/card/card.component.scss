@@ -1,0 +1,25 @@
+@import "src/app/styles/width";
+@import "src/app/styles/shadow";
+
+.card {
+  @include width-100;
+  @include standard-shadow;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__rent-company-image {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  &__image {
+    @include width-100;
+    height: 200px;
+  }
+
+}

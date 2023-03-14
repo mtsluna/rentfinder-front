@@ -1,0 +1,46 @@
+@import "src/app/styles/padding";
+@import "src/app/styles/flex";
+@import "src/app/styles/color";
+@import "src/app/styles/shadow";
+
+.home {
+  &__search {
+    @include padding-only-sides-1;
+  }
+
+  &__extra {
+    @include padding-only-sides-1;
+    @include flex-space-between-row-center;
+    padding-top: 1rem;
+
+    &__metadata {
+      font-size: small;
+      color: $subtitle-light;
+    }
+
+    &__actions {
+      @include flex-row-end;
+      gap: 0.5rem;
+
+      &__button {
+        @include standard-shadow;
+        @include flex-center;
+        @include padding-only-sides-1;
+        gap: 0.25rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        border-radius: 25px;
+        border: none;
+        background-color: white;
+      }
+
+    }
+
+  }
+
+  &__cards {
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+  }
+}

@@ -1,0 +1,16 @@
+@import 'src/app/styles/width';
+@import 'src/app/styles/heigth';
+@import 'src/app/styles/flex';
+@import 'src/app/styles/padding';
+
+.navbar {
+  @include width-100;
+  @include height-4;
+  @include flex-space-between-row-center;
+  @include padding-only-sides-1;
+  box-sizing: border-box;
+
+  &__logo {
+    width: 125px;
+  }
+}

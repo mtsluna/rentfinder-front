@@ -1,0 +1,44 @@
+@import "src/app/styles/flex";
+@import "src/app/styles/padding";
+@import "src/app/styles/color";
+
+.card-content {
+  @include flex-space-between-row;
+  @include padding-only-sides-1;
+  height: 65px;
+
+  &__description {
+    @include flex-space-between-column;
+
+    &__title {
+      font-size: 1rem;
+    }
+
+    &__subtitle {
+      color: $subtitle-light;
+      font-size: 0.75rem;
+
+      &__type {
+        color: $subtitle-dark;
+      }
+    }
+
+  }
+
+  &__price {
+    @include flex-space-between-column;
+
+    &__amount {
+      @include flex-row-end;
+      color: #008105;
+      font-size: 1rem;
+    }
+
+    &__term {
+      @include flex-row-end;
+      color: $subtitle-light;
+      font-size: 0.75rem;
+    }
+
+  }
+}

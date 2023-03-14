@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("assets/fonts/inter-family.ttf");
+}
+
+* {
+  font-family: 'Inter', 'arial', sans-serif;
+}
+
+.fullscreen-dialog {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: 100%;
+  height: 100%;
+}
